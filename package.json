@@ -1,0 +1,16 @@
+{
+  "name": "ams-dev",
+  "version": "1.0.0",
+  "description": "AMS前端开发流程",
+  "main": "index.js",
+  "scripts": {
+    "mock": "gulp mock"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "through2": "^4.0.2"
+  }
+}

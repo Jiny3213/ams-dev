@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 引入vue2 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- 引入element -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui@2.11.1/lib/theme-chalk/index.css" />
+  <script src="https://unpkg.com/element-ui@2.11.1/lib/index.js"></script>
+  <!-- 引入ams -->
+  <script src="https://unpkg.com/@ams-team/ams/lib/ams.js"></script>
+  <title>AMS表单模板</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    const config = <slot></slot>
+    ams.block('template-block', config)
+    ams.render('template-block', '#app')
+  </script>
+</body>
+
+</html>
